@@ -9,7 +9,8 @@
 
                 <div class="main-menu absolute z-50 w-full lg:w-auto top-full left-0 lg:static bg-white dark:bg-title lg:bg-transparent lg:dark:bg-transparent px-5 sm:px-[30px] py-[10px] sm:py-5 lg:px-0 lg:py-0" :class="toggle ? 'active' : ''">
                     <ul class="text-lg leading-none text-title dark:text-white lg:flex lg:gap-[30px]">
-                        <li class="relative" :class="['/','/index-v2','/index-v3','/index-v4','/index-v5','/index-v6', '/live-test'].includes(current) ? 'active' : ''">
+                        <!-- <li class="relative" :class="['/','/index-v2','/index-v3','/index-v4','/index-v5','/index-v6', '/live-test'].includes(current) ? 'active' : ''"> -->
+                        <li class="relative">
                             <router-link to="#">라이브<span></span></router-link>
                             <ul class="sub-menu lg:absolute z-50 lg:top-full lg:left-0 lg:min-w-[220px] lg:invisible lg:transition-all lg:bg-white lg:dark:bg-title lg:py-[15px] lg:pr-[30px]">
                                 <li :class="current === '/live-test' ? 'active' : ''"><router-link to="/live-test" class="menu-item">Live</router-link></li>
@@ -17,7 +18,8 @@
                                 <li :class="current === '/live-test' ? 'active' : ''"><router-link to="/live-test" class="menu-item">편성표</router-link></li>
                             </ul>
                         </li> 
-                        <li class="relative" :class="['/','/index-v2','/index-v3','/index-v4','/index-v5','/index-v6', '/product-test'].includes(current) ? 'active' : ''">
+                        <!-- <li class="relative" :class="['/','/index-v2','/index-v3','/index-v4','/index-v5','/index-v6', '/product-test'].includes(current) ? 'active' : ''"> -->
+                        <li class="relative">
                             <router-link to="#">고민별<span></span></router-link>
                             <ul class="sub-menu lg:absolute z-50 lg:top-full lg:left-0 lg:min-w-[220px] lg:invisible lg:transition-all lg:bg-white lg:dark:bg-title lg:py-[15px] lg:pr-[30px]">
                                 <li :class="current === '/product-test' ? 'active' : ''"><router-link to="/product-test" class="menu-item">혈압</router-link></li>
@@ -27,20 +29,14 @@
                                 <li :class="current === '/product-test' ? 'active' : ''"><router-link to="/product-test" class="menu-item">영양보충</router-link></li>
                             </ul>
                         </li> 
-                        <li class="relative" :class="['/shop-v1','/shop-v2','/shop-v3','/shop-v4','/product-details','/cart','/checkout'].includes(current) ? 'active' : ''">
+                        <!-- <li class="relative" :class="['/shop-v1','/shop-v2','/shop-v3','/shop-v4','/product-details','/cart','/checkout'].includes(current) ? 'active' : ''"> -->
+                        <li class="relative">
                             <router-link to="#">업체별<span></span></router-link>
                             <ul class="sub-menu lg:absolute z-50 lg:top-full lg:left-0 lg:min-w-[220px] lg:invisible lg:transition-all lg:bg-white lg:dark:bg-title lg:py-[15px] lg:pr-[30px]">
                                 <li :class="current === '/shop-v1' ? 'active' : ''"><router-link to="/shop-v1">업체1</router-link></li>
                                 <li :class="current === '/shop-v2' ? 'active' : ''"><router-link to="/shop-v2">업체2</router-link></li>
                                 <li :class="current === '/shop-v3' ? 'active' : ''"><router-link to="/shop-v3">업체3</router-link></li>
                                 <li :class="current === '/shop-v4' ? 'active' : ''"><router-link to="/shop-v4">업체4</router-link></li>
-                            </ul>
-                        </li>
-                        <li class="relative" :class="['/blog-v1','/blog-v2','/blog-details-v1','/blog-details-v2','/blog-details-v3','/blog-tag', '/chat-test'].includes(current) ? 'active' : ''">
-                            <router-link to="#">채팅방<span></span></router-link>
-                            <ul class="sub-menu lg:absolute z-50 lg:top-full lg:left-0 lg:min-w-[220px] lg:invisible lg:transition-all lg:bg-white lg:dark:bg-title lg:py-[15px] lg:pr-[30px]">
-                                <li :class="current === '/chat-test' ? 'active' : ''"><router-link to="/chat-test">채팅방1</router-link></li>
-                                <li :class="current === '/chat-test' ? 'active' : ''"><router-link to="/chat-test">채팅방2</router-link></li>
                             </ul>
                         </li>
                         <li :class="current === '/contact' ? 'active' : ''"><router-link to="/contact">입점신청</router-link></li>

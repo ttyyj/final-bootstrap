@@ -58,7 +58,7 @@
 
          <div class="bg-[#FFF7F0] dark:bg-primary dark:bg-opacity-10 py-12">
             <div class="container">
-                <PartnerOne/>
+
             </div>
         </div>
 
@@ -71,7 +71,6 @@
 <script setup>
     import { onMounted, ref } from 'vue';
     import NavbarOne from '@/components/navbar/navbar-one.vue';
-    import PartnerOne from '@/components/partner/partner-one.vue';
     import FooterOne from '@/components/footer/footer-one.vue';
     import ScrollToTop from '@/components/scroll-to-top.vue';
 

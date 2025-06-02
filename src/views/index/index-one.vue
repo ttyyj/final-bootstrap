@@ -302,9 +302,7 @@
                 </div>
             </div>
         </div>
-
-        <FooterThree/>
-
+     <FooterThree/>
         <ScrollToTop/>
 
     </div>
@@ -330,9 +328,6 @@
 
     import NavbarOne from '@/components/navbar/navbar-one.vue';
     import LayoutOne from '@/components/product/layout-one.vue';
-    import BlogOne from '@/components/blog/blog-one.vue';
-    import PartnerOne from '@/components/partner/partner-one.vue';
-    // import FooterOne from '@/components/footer/footer-one.vue';
     import ScrollToTop from '@/components/scroll-to-top.vue';
 
 
@@ -344,9 +339,8 @@
    
     import Aos from 'aos';
     import 'aos/dist/aos.css';
-// import FooterFour from '@/components/footer/footer-four.vue';
-import FooterThree from '@/components/footer/footer-three.vue';
-
+    
+    import FooterThree from '@/components/footer/footer-three.vue';
     onMounted(() => {
         Aos.init()
     });
